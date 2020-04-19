@@ -23,4 +23,8 @@ rightoTest.only = function (name, fn) {
   test.only(name, runTest(fn));
 };
 
+rightoTest.skip = function (name, fn) {
+  test.skip(name, runTest(fn));
+};
+
 module.exports = rightoTest;
