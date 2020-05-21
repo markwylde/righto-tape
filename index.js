@@ -6,9 +6,14 @@ const outputOnError = error => { error && console.log(error); };
 function runTest (fn) {
   if (fn.constructor.name === 'GeneratorFunction') {
     return function (t) {
+      const originalPlan = t.plan
+      t.plan = count => originalPlan.call(t, count + 1);
       const generator = righto.iterate(fn);
       const result = righto(generator, t);
       result(outputOnError);
+      result(() => {
+        t.pass();
+      })
     };
   }
 
