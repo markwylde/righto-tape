@@ -1,3 +1,6 @@
+| :zap:        I'm now using [basictap](https://github.com/markwylde/basictap) which lets you use use tape, promises or anything else you want   |
+|-----------------------------------------|
+
 # righto-tape
 [![Build Status](https://travis-ci.org/markwylde/righto-tape.svg?branch=master)](https://travis-ci.org/markwylde/righto-tape)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/markwylde/righto-tape)
